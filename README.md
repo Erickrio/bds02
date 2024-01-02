@@ -16,3 +16,8 @@ Data não pode ser passada
 Cidade não pode ser nula
 
 
+Regras de autorização do ResourceServerConfig descritas em linguagem natural.
+1) Os endpoints de login e do H2 devem ser públicos
+2) Os endpoints GET para /cities e /events devem ser públicos
+3) O endpoint POST de /events devem requerer login de ADMIN ou CLIENT
+4) Todos demais endpoints devem requerer login de ADMIN
